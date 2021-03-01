@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		22DDC48E25ECE7F300A5A2F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DDC48D25ECE7F300A5A2F4 /* AppDelegate.swift */; };
-		22DDC49025ECE7F300A5A2F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DDC48F25ECE7F300A5A2F4 /* SceneDelegate.swift */; };
 		22DDC49225ECE7F300A5A2F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DDC49125ECE7F300A5A2F4 /* ViewController.swift */; };
 		22DDC49525ECE7F300A5A2F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22DDC49325ECE7F300A5A2F4 /* Main.storyboard */; };
 		22DDC49725ECE7F600A5A2F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22DDC49625ECE7F600A5A2F4 /* Assets.xcassets */; };
@@ -37,7 +36,6 @@
 /* Begin PBXFileReference section */
 		22DDC48A25ECE7F300A5A2F4 /* BindingMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BindingMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22DDC48D25ECE7F300A5A2F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22DDC48F25ECE7F300A5A2F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		22DDC49125ECE7F300A5A2F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		22DDC49425ECE7F300A5A2F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22DDC49625ECE7F600A5A2F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,10 +97,11 @@
 		22DDC48C25ECE7F300A5A2F4 /* BindingMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				22DDC48D25ECE7F300A5A2F4 /* AppDelegate.swift */,
-				22DDC48F25ECE7F300A5A2F4 /* SceneDelegate.swift */,
-				22DDC49125ECE7F300A5A2F4 /* ViewController.swift */,
-				22DDC49325ECE7F300A5A2F4 /* Main.storyboard */,
+				22DDC4C725ECE83B00A5A2F4 /* App */,
+				22DDC4C625ECE82E00A5A2F4 /* Storyboard */,
+				22DDC4C525ECE81C00A5A2F4 /* ViewModel */,
+				22DDC4C425ECE81700A5A2F4 /* View */,
+				22DDC4C325ECE80F00A5A2F4 /* Model */,
 				22DDC49625ECE7F600A5A2F4 /* Assets.xcassets */,
 				22DDC49825ECE7F600A5A2F4 /* LaunchScreen.storyboard */,
 				22DDC49B25ECE7F600A5A2F4 /* Info.plist */,
@@ -126,6 +125,44 @@
 				22DDC4B125ECE7F700A5A2F4 /* Info.plist */,
 			);
 			path = BindingMVVMUITests;
+			sourceTree = "<group>";
+		};
+		22DDC4C325ECE80F00A5A2F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22DDC4C425ECE81700A5A2F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22DDC49125ECE7F300A5A2F4 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22DDC4C525ECE81C00A5A2F4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		22DDC4C625ECE82E00A5A2F4 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				22DDC49325ECE7F300A5A2F4 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		22DDC4C725ECE83B00A5A2F4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				22DDC48D25ECE7F300A5A2F4 /* AppDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +297,6 @@
 			files = (
 				22DDC49225ECE7F300A5A2F4 /* ViewController.swift in Sources */,
 				22DDC48E25ECE7F300A5A2F4 /* AppDelegate.swift in Sources */,
-				22DDC49025ECE7F300A5A2F4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +475,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = BindingMVVM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +495,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = BindingMVVM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
